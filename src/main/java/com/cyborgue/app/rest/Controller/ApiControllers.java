@@ -1,4 +1,4 @@
-package com.cyborgue.app.rest;
+package com.cyborgue.app.rest.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
