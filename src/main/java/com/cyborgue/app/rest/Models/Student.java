@@ -51,6 +51,18 @@ public class Student {
     public void setsPassword(String sPassword) {
         this.sPassword = sPassword;
     }
-    
+    public Student(String sName, String sAddress, String sEmail, String sPassword) {
+        this.sName = sName;
+        this.sAddress = sAddress;
+        this.sEmail = sEmail;
+        this.sPassword = sPassword;
+    }
+
+    @Override
+	public String toString() {
+		return String.format("Student[id=%d, Name='%s', Address='%s', Email='%s', Password='%s']", id,
+				sName, sAddress, sEmail, sPassword);
+	}
+
 
 }
