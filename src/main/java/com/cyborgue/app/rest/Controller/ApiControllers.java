@@ -3,6 +3,8 @@ package com.cyborgue.app.rest.Controller;
 import com.cyborgue.app.rest.Models.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cyborgue.app.rest.Repo.UserRepo;
@@ -38,5 +40,12 @@ public class ApiControllers {
         return userRepo.findAll();
     }
     
+    @PostMapping(value = "/save")
+    public String saveStudent(@RequestBody Student student)
+    {
+        userRepo.save(student);
+        return "Saved...";
+
+    }
 
 }
