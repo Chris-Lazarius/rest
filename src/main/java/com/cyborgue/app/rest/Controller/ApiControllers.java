@@ -24,9 +24,8 @@ public class ApiControllers {
     @Autowired
     private UserRepo userRepo;
     
-    @RequestMapping("/")
+    
     @GetMapping(value = "/")
-    @ResponseBody
     public String getPage()
     {
         
