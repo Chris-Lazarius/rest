@@ -12,11 +12,17 @@ import com.cyborgue.app.rest.Models.Student;
 import com.cyborgue.app.rest.Repo.UserRepo;
 
 
-
+@RestController
 @SpringBootApplication
 public class RestApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(RestApplication.class);
+
+	@RequestMapping("/")
+	public String sMessage()
+	{
+		return "Hi Admin";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestApplication.class, args);
