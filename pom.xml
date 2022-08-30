@@ -61,7 +61,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-graphql</artifactId>
 		</dependency>
-		<!--/Added dependencies for Devtools, Lombok and graphql has been added-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!--spring-boot-actuator-->
+		<!--/Added dependencies for actuatory, Devtools, Lombok and graphql has been added-->
 	</dependencies>
 
 	<build>
