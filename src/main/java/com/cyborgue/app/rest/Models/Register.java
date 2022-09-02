@@ -61,6 +61,19 @@ public class Register {
     }
     
     
+    public Register(String strudent_name, String student_address, String student_email, String student_password, String course_name) {
+        this.strudent_name = strudent_name; 
+        this.student_address = student_address;
+        this.student_email = student_email; 
+        this.student_password = student_password;
+        this.course_name = course_name;
+    }
+
+    @Override
+	public String toString() {
+		return String.format("Register[id=%d, Name='%s', Address='%s', Email='%s', Password='%s', Course name='%s']", register_id,
+        strudent_name, student_address, student_email, student_password, course_name);
+	}
     
     
 
