@@ -42,7 +42,17 @@ public class Administrator {
         this.admin_contact = admin_contact;
     }
     
-    
+    public Administrator(long admin_id, String admin_Name, String admin_password, String admin_contact) {
+        this.admin_id = admin_id;
+        this.admin_Name = admin_Name;
+        this.admin_password = admin_password;
+        this.admin_contact = admin_contact;
+    }
+
+    @Override
+	public String toString() {
+		return String.format("Administrator[id=%d, Name='%s', Password='%s', Contact='%s']", admin_id, admin_Name, admin_password, admin_contact);
+	}
     
     
     
